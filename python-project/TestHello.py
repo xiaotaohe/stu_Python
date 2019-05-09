@@ -1,0 +1,9 @@
+
+# coding=gbk
+
+'''
+Created on 2019Äê5ÔÂ9ÈÕ
+
+@author: Administrator
+'''
+print("hello world!");
