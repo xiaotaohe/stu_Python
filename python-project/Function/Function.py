@@ -50,6 +50,7 @@ def fun1():
 fun1()
 print("x is still: ",str(x))
 #3.缺省参数
+#注意：不能在默认参数后面出现没有默认值的参数
 def test_que(str = "hehe",times = 1):
     repeates = str*times
     return repeates
@@ -59,3 +60,18 @@ repeated = test_que("hello world!",4)
 print(repeated)
 repeated = test_que()
 print(repeated)
+#4.关键字参数
+def func(a,b = 4,c = 6):
+    print("a is ",a," and b is ",b,"and c is ",c)
+func(125)
+#关键字传入c
+func(12,c = 7)
+
+#5.可变参数列表varages
+# 注意：*默认传入的元素是一个list，**python对应多个有关键字指明的参数
+def print_paras(fparas,*nums,**words):
+    print("fparas: ", str(fparas))
+    print("nums: ",str(nums))
+    print("words: ", str(words))
+print_paras("hello",1,3,5,7,words = "python",another_words = "java")
+print_paras("hello",1,words = "python")
