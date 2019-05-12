@@ -49,3 +49,13 @@ def fun1():
     print("change local x to: ",str(x))
 fun1()
 print("x is still: ",str(x))
+#3.缺省参数
+def test_que(str = "hehe",times = 1):
+    repeates = str*times
+    return repeates
+repeated = test_que("hello world!")
+print(repeated)
+repeated = test_que("hello world!",4)
+print(repeated)
+repeated = test_que()
+print(repeated)
